@@ -42,8 +42,10 @@
 
 <body >
 
-  <header class="p-8 min-h-screen bg-cover bg-center flex flex-col" style="background-image: url('https://images.unsplash.com/photo-1584531185184-4009fbfd2659?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
-    <nav class="grid md:grid-cols-3 uppercase">
+  <header class="min-h-screen flex flex-col justify-stretch" >
+
+    <!-- nav bar -->
+    <nav class="grid md:grid-cols-3 uppercase bg-[#ddb7ab]">
       <div class="hidden md:flex items-center justify-around">
         <a>Nav 1</a>
         <a>Nav 2</a>
@@ -58,22 +60,27 @@
         <a>Nav 6</a>
       </div>
     </nav>
-    <div class="text-center text-white p-8 m-auto">
-      <div>
-        <hr>
-        <h1 class="uppercase text-6xl p-4">This is a heading</h1> 
-        <p class="text-xl">This is a subheading</p>
+
+    <!-- hero banner -->
+    <div class="bg-cover bg-center grow flex flex-col justify-end" style="background-image: url('https://images.unsplash.com/photo-1584531185184-4009fbfd2659?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+      <div class="p-4">
+          <h1 class="uppercase text-6xl mb-4">This is a heading</h1> 
+          <p class="text-xl mb-4">This is a subheading</p>
+  
       </div>
     </div>
   </header>
 
   <!---------- image text block --------->
-  <section class="md:min-h-[75vh] grid grid-cols-2">
-    <div class="bg-[9BA5A4]">
-      <div  style="background-image: url('https://images.unsplash.com/photo-1504964030113-79ab61954f0e?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+  <section class="min-h-[75vh] grid grid-cols-2 border border-black">
+    <!----- left side ----->
+    <div class="bg-[#9BA5A4] p-[15%]">
+      <div class="aspect-square" style="background-image: url('https://images.unsplash.com/photo-1504964030113-79ab61954f0e?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
       </div>
     </div>
-    <div class="p-8 flex flex-col justify-center bg-[#D3D3D3]">
+
+    <!----- right side ----->
+    <div class="p-8 flex flex-col bg-[#D3D3D3]">
       <h2 class="text-3xl uppercase">Who are we</h2>
       <p class="text-sm py-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nesciunt commodi voluptas hic ipsum, dolorum dolores. Ea voluptatem accusantium temporibus ullam! Repudiandae rerum eius culpa numquam architecto doloremque corporis et!</p>
       <button class="text-sm uppercase border border-black max-w-36 p-2">Find out more</button>
@@ -127,6 +134,85 @@
     <p class="text-center bg-[#9ba5a4] p-2">Brand name</p>
     <p class="text-center bg-[#9ba5a4] p-2">Brand name</p>
   </section>
+
+  <!------------- Testimonials section ----------->
+
+  <section class="p-20 bg-[#D3D3D3]">
+    <div class="max-w-5xl m-auto ">
+      <h2 class="uppercase pb-4 text-3xl">Our Services</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="border border-black bg-[#e3e5e8]">
+          <div class="aspect-square bg-cover bg-bottom m-6" style="background-image: url('https://images.unsplash.com/photo-1513689125086-6c432170e843?q=80&w=3264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+          <h3 class="uppercase tracking-wider pb-4">Duis Aute</h3>
+          <p class="border-t border-black p-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sint tempora excepturi maxime reprehenderit obcaecati commodi, consectetur cumque quis asperiores, ea nihil, delectus autem omnis debitis animi ipsam. Beatae, exercitationem!</p>
+      </div>
+      <div class="border border-black bg-[#e3e5e8]">
+        <div class="aspect-square bg-cover bg-bottom m-6" style="background-image: url('https://images.unsplash.com/photo-1513689125086-6c432170e843?q=80&w=3264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+        <h3 class="uppercase tracking-wider pb-4">Duis Aute</h3>
+        <p class="border-t  border-black p-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sint tempora excepturi maxime reprehenderit obcaecati commodi, consectetur cumque quis asperiores, ea nihil, delectus autem omnis debitis animi ipsam. Beatae, exercitationem!</p>
+      </div>
+      <div class="border border-black bg-[#e3e5e8]">
+        <div class="aspect-square bg-cover bg-bottom m-6" style="background-image: url('https://images.unsplash.com/photo-1513689125086-6c432170e843?q=80&w=3264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+        <h3 class="uppercase tracking-wider pb-4">Duis Aute</h3>
+        <p class="border-t  border-black p-8"x>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sint tempora excepturi maxime reprehenderit obcaecati commodi, consectetur cumque quis asperiores, ea nihil, delectus autem omnis debitis animi ipsam. Beatae, exercitationem!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!---------- Contact form ---------->
+
+<section class="lg:grid grid-cols-2 min-h-[75vh] border border-black bg-[#D3D3D3]">
+  <div class="p-12">
+    <h2 class="uppercase text-2xl py-4">contact us</h2>
+    <p class=""x>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sint tempora excepturi maxime reprehenderit obcaecati commodi, consectetur cumque quis asperiores, ea nihil, delectus autem omnis debitis animi ipsam. Beatae, exercitationem!</p>
+  </div>
+  <div class="p-20">
+    <form class="">
+      <input type="text" id="name" name="name" placeholder="Name" class="block w-full bg-transparent border-b border-black placeholder:text-black placeholder:uppercase placeholder:text-sm mb-4">
+      <input type="email" id="Email" name="Email" class="block w-full bg-transparent border-b border-black placeholder:text-black placeholder:uppercase placeholder:text-sm mb-4" placeholder="Email" required>
+      <label for="Message" class="block uppercase text-sm text-black">Your message</label>
+      <textarea id="Message" name="Message" class="block w-full bg-transparent border border-black mb-4" rows="6" maxlength="3000" required></textarea>
+      <input type="submit" value="Send" class="border border-black py-2 px-8 uppercase text-sm">
+    </form>
+  </div>
+</section>
+
+<!------------- footer ----------->
+
+<footer class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 p-20 border-b border-black">
+  <div class="">
+    <h4 class="uppercase py-4">Lorem ipsum</h4>
+    <a class="uppercase">dolor sit amet</a>
+    <a class="uppercase">consectetur</a>
+    <a class="uppercase">adipisicing elit</a>
+    <a class="uppercase">sed do</a>
+  </div>
+  <div>
+    <h4 class="uppercase py-4">Lorem ipsum</h4>
+    <a class="uppercase">dolor sit amet</a>
+    <a class="uppercase">consectetur</a>
+    <a class="uppercase">adipisicing elit</a>
+    <a class="uppercase">sed do</a>
+  </div>
+  <div>
+    <h4 class="uppercase py-4">Lorem ipsum</h4>
+    <a class="uppercase">dolor sit amet</a>
+    <a class="uppercase">consectetur</a>
+    <a class="uppercase">adipisicing elit</a>
+    <a class="uppercase">sed do</a>
+  </div>
+  <div class="">
+    <h4 class="uppercase py-4">subscribe to our newsletter</h4>
+    <input class="min-w-full">
+    <button class="py-4">
+      subscribe
+    </button>
+  </div>
+  <div class="my-6 col-span-full bg-[]">
+    <p class="">Terms of use</p>
+  </div>
+</footer>
 
 </body>
 
