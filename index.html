@@ -40,11 +40,46 @@
 
 </head>
 
-<body>
+<body >
 
-  <h1 class="text-3xl font-bold underline btn-primary">
-    Hello world!
-  </h1>
+  <header class="p-8 min-h-screen bg-cover bg-center flex flex-col" style="background-image: url('https://images.unsplash.com/photo-1584531185184-4009fbfd2659?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+    <nav class="grid md:grid-cols-3 uppercase">
+      <div class="hidden md:flex items-center justify-around">
+        <a>Nav 1</a>
+        <a>Nav 2</a>
+        <a>Nav 3</a>
+      </div>
+      <div class="text-center">
+        <a class="text-white text-xl">Logo</a>
+      </div>
+      <div class="hidden md:flex items-center justify-around">
+        <a>Nav 4</a>
+        <a>Nav 5</a>
+        <a>Nav 6</a>
+      </div>
+    </nav>
+    <div class="text-center text-white p-8 m-auto">
+      <div>
+        <hr>
+        <h1 class="uppercase text-6xl p-4">This is a heading</h1> 
+        <p class="text-xl">This is a subheading</p>
+      </div>
+    </div>
+  </header>
+
+  <!---------- image text block --------->
+  <section class="md:min-h-[75vh] grid grid-cols-2">
+    <div class="bg-[9BA5A4]">
+      <div  style="background-image: url('https://images.unsplash.com/photo-1504964030113-79ab61954f0e?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+      </div>
+    </div>
+    <div class="p-8 flex flex-col justify-center bg-[#D3D3D3]">
+      <h2 class="text-3xl uppercase">Who are we</h2>
+      <p class="text-sm py-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nesciunt commodi voluptas hic ipsum, dolorum dolores. Ea voluptatem accusantium temporibus ullam! Repudiandae rerum eius culpa numquam architecto doloremque corporis et!</p>
+      <button class="text-sm uppercase border border-black max-w-36 p-2">Find out more</button>
+    </div>
+    <div></div>
+  </section>
 
 </body>
 
